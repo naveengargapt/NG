@@ -1,0 +1,101 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<%@ Register Src="~/commoncontrol.ascx" TagName="Menu" TagPrefix="Common" %>
+<%@ Register Src="~/loggedusercontrol.ascx" TagName="OutMenu" TagPrefix="LoggedUser" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="title" content="jQuery Drop Down Menu, SEO, erp, web designing, web development, software development, dcore, Knowledge Point!" />
+    <meta name="keywords" content="SMS Alert System For Schools, IT Companies in haryana, Web development, web designing, web hosting, domain names, jQuery Menu jQuery Drop Down Menu" />
+    <meta name="description" content="An India based software company located in gurgaon, having offices in rohtak, noida. Web site development, web hosting, Search engine optimization, ERP ." />
+    <title></title>
+    <link href="menu.css" type="text/css" rel="Stylesheet" />
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin: 0px; background-color: #bdcb9a">
+    <form id="form1" runat="server">   
+    <div align="center">
+        <table style="padding: 0px; margin: 0px; width: 1024px; vertical-align: top; border-collapse: collapse;
+            border-spacing: 0px;">
+            <tr>
+                <td style="padding: 0px; margin: 0px; width: 1024px; vertical-align: top; border-collapse: collapse;
+                    border-spacing: 0px;">
+                    <div align="center" style="background-image: url('Images/overlay-top2.png');">
+                        <table cellspacing="1" style="padding: 0px; margin: 0px; width: 1024px; vertical-align: top;
+                            border-collapse: collapse; border-spacing: 0px;">
+                            <tr>
+                                <td style="padding: 0px; margin: 0px; width: 218px; vertical-align: top; border-collapse: collapse;
+                                    border-spacing: 0px;">
+                                    <div align="center">
+                                        <asp:Image ID="imgLogo" runat="server" AlternateText="Knowledge Point" ImageUrl="~/Images/logo_small.png"
+                                            Height="85px" />
+                                    </div>
+                                </td>
+                                <td style="padding: 0px; margin: 0px; width: 806px; vertical-align: top; border-collapse: collapse;
+                                    border-spacing: 0px;">
+                                    <div align="left" style="margin-left: 80px">
+                                        <Common:Menu ID="commonmenu" runat="server" />
+                                        <LoggedUser:OutMenu ID="logoutmenu" runat="server" />
+                                           <div align="right">
+                        <asp:ImageButton ID="Image6" runat="server" ImageUrl="~/Images/Register.png" AlternateText="Register" 
+                                                   Height="100px" />
+                                                <%--onclick="Image6_Click"/>--%>
+                                    </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top; background-color:White ">
+            <marquee direction="left" scrollamount="3" onmouseout="this.start()" onmouseover="this.stop()">
+             <a href="downloads.aspx" class="footer_anchor" style="color:Red" title="Registration Form">Download knowledge Point School SMS Alert System</a>           
+             </marquee>              
+                 
+                </td>
+            </tr>
+          <%--  <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>--%>
+            <tr>
+                <td>
+                    <div align="center" style="background-color: white;">
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>                      
+                       
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align: top">
+                    <div align="center" style="background-image: url('Images/FOOTER_IMAGE_BG.jpg'); background-repeat: repeat-x;
+                        height: 44px;">
+                        <div style="float: left; margin-left: 12px; margin-top: 8px;">
+                            <p class="para" style="color: White">
+                                &copy; 2012 Knowledge Point. All rights reserved</p>
+                        </div>
+                        <div style="float: right; margin-right: 13px; margin-top: 8px;">
+                            <p class="para" style="color: White">
+                                <a href="Home.aspx" class="footer_anchor">Home</a><span> | </span><a href="aboutus.aspx"
+                                    class="footer_anchor">About Us</a><span> | </span><a href="careers.aspx" class="footer_anchor">
+                                        Careers</a><span> | </span><a href="contactus.aspx" class="footer_anchor">
+                                        Contact</a></p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+  
+    
+    </form>
+  
+</body>
+</html>
